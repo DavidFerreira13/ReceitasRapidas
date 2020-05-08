@@ -6,6 +6,6 @@ app.listen(port, function () {
   console.log("Server is running on port "+ port);
 });
 
-app.get('/', function (req, res) {
-  res.send('<h1>Hello World!</h1>')
+app.get('/ping', function (req, res) {
+  res.send('<h1>Pong string</h1>')
 })
